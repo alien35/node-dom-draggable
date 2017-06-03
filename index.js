@@ -79,8 +79,13 @@ var DomNodeDraggable = function DomNodeDraggable(selector, options) {
                         return;
                     }
 
-                    if (options.allowX) {
-                        elemBeingDragged.style.left = elemBeingDragged._domNodeDraggable.elPos.x + e.clientX - elemBeingDragged._domNodeDraggable.mousePos.x + "px";
+                    var positionX = elemBeingDragged._domNodeDraggable.elPos.x + e.clientX - elemBeingDragged._domNodeDraggable.mousePos.x;
+                    if (options.allowX && positionX >= 0) {
+                        if ((options.minX || options.minX === 0) && positionX >= options.minX) {
+                            elemBeingDragged.style.left = positionX + 'px';
+                        } else {
+                            elemBeingDragged.style.left = positionX + 'px';
+                        }
                     }
 
                     if (options.allowY) {

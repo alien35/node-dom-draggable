@@ -11,6 +11,7 @@ Example usage
     ndd('.track-block', {
                 allowX: true,
                 allowY: true,
+                minX,
                 onStart: function(ev, el) {
                     console.log('start')
                 },
@@ -39,3 +40,4 @@ TODO
 ----
 
 Allow multiple elements to be targeted at once. Will definitely get to this when the time is right. (Am using it for a personal project that will eventually need multiple targeting.)
+Add minY/maxY, maxX
