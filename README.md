@@ -6,7 +6,7 @@ Simple library to allow dragging elements across the DOM. Ideal for cases you do
 Example usage
 ----
 
-    const nDD = require('./../../dom-node-draggable/index');
+    const nDD = require('node-dom-draggable');
 
     ndd('.track-block', {
                 allowX: true,
