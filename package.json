@@ -1,0 +1,25 @@
+{
+  "name": "node-dom-draggable",
+  "version": "1.0.0",
+  "description": "makes DOM elements draggable in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alien35/node-dom-draggable.git"
+  },
+  "keywords": [
+    "node",
+    "dom",
+    "draggable",
+    "drag"
+  ],
+  "author": "Alexander Leon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alien35/node-dom-draggable/issues"
+  },
+  "homepage": "https://github.com/alien35/node-dom-draggable#readme"
+}
